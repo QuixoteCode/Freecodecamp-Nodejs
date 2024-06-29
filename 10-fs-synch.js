@@ -3,10 +3,10 @@ console.log('start');
 const first = readFileSync('./content/first.txt','utf8')
 const second = readFileSync('./content/second.txt','utf8')
 
-//La flag "a" appends
 writeFileSync(
     './content/result-sync.txt', 
     `Here is the result : ${first}, ${second}`,
+    //La flag "a" appends
     { flag: 'a'}
 )
 console.log('done with this task')
